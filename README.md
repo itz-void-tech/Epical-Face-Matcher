@@ -1,106 +1,68 @@
-🌌 Project Overview
+# 🔱 Divine Mirror: Every Person Has A God Within
 
-Every Person Has a God Within is an experimental AI–computer vision web application that blends modern facial landmark detection with ancient mythological symbolism. Using a live webcam feed, the system continuously analyzes facial presence and, upon user interaction, reveals a divine archetype representing the symbolic inner essence of the individual.
+An AI-powered "Soul Extraction" experience that utilizes real-time Computer Vision to map human facial geometry and reveal the mythological essence residing within.
 
-This project is not face recognition and does not identify real people. Instead, it is a symbolic, artistic interpretation driven by computer vision detection states and immersive UI storytelling.
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-white?style=for-the-badge&logo=flask)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Face_Mesh-teal?style=for-the-badge&logo=google)
 
-👁️ Core Focus Areas
-1️⃣ Real-Time Computer Vision
+## 🌌 The Concept
+The **Divine Mirror** bridges the gap between ancient mythology and modern technology. Using a high-fidelity Face Mesh, the system "scans" the user's presence and identifies a corresponding deity or mythological character from Indian heritage (e.g., Shiva, Durga, Arjuna) based on the "Soul Extraction Protocol."
 
-Uses MediaPipe Face Mesh to detect and track facial landmarks in real time
+## ✨ Key Features
+* **Real-time Face Mesh:** Utilizes `mediapipe` to track 468+ facial landmarks in real-time.
+* **Cinematic UI:** A dark-themed, "Godly Gold" interface featuring **Cinzel Decorative** typography and sacred geometry overlays.
+* **Dynamic Essence Mapping:** A randomized algorithm that pair's the user's detected presence with deep philosophical insights (Dharma, Wisdom, Strength).
+* **Continuous Scanning:** Visual "Lightning/Scan" bar effect to simulate a high-tech spiritual sync.
 
-Maps 468+ facial landmarks per face with high temporal stability
+---
 
-Supports multiple faces while focusing on the primary subject
+## 🛠️ Technical Architecture
 
-Displays live landmark visualization for transparency and technical clarity
+### Backend
+* **Flask:** Handles the web server and video streaming routes.
+* **OpenCV:** Manages camera input and frame preprocessing.
+* **MediaPipe Face Mesh:** Processes RGB frames to detect facial presence and apply a "Divine" landmark overlay.
 
-2️⃣ Symbolic Identity Mapping
+### Frontend
+* **HTML5/CSS3:** Custom styles with CSS variables for a "Void & Gold" aesthetic.
+* **JavaScript (Fetch API):** Communicates with the `/find` endpoint to trigger the soul analysis without reloading the page.
 
-Once a face is detected, the system symbolically assigns a mythological character
+---
 
-Characters are drawn from Indian mythology (Shiva, Krishna, Durga, Rama, etc.)
+## 🚀 Installation & Setup
 
-Each character represents a philosophical archetype, not a literal match
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/your-username/divine-mirror.git](https://github.com/your-username/divine-mirror.git)
+    cd divine-mirror
+    ```
 
-Output includes:
+2.  **Install Dependencies:**
+    ```bash
+    pip install flask opencv-python mediapipe numpy
+    ```
 
-Character name
+3.  **Run the Application:**
+    ```bash
+    python app.py
+    ```
 
-Match confidence (illustrative)
+4.  **Access the Mirror:**
+    Open your browser and navigate to `http://127.0.0.1:5000`
 
-Short interpretive message
+---
 
-⚠️ The system is intentionally non-deterministic and artistic in nature.
+## 📜 Soul Extraction Logic
+When the **Initiate Seek** button is pressed, the system checks the `face_present` global state:
+* **If Detected:** It selects a character from the `DIVINE_CHARACTERS` pool and fetches their corresponding philosophical text.
+* **If Not Detected:** It prompts the user to "Look into the divine mirror."
 
-3️⃣ Immersive Cinematic UI / UX
+---
 
-Dark, mythic interface inspired by sacred geometry + futuristic HUDs
+## 👤 Author
+**Swarnendu Kundu**
+* *Embedded Systems & Robotics Enthusiast*
 
-Real-time scanning animations simulate a “soul analysis protocol”
-
-Dynamic button states (Idle → Seeking → Detected)
-
-Smooth transitions and glow effects to enhance emotional engagement
-
-4️⃣ Web Architecture
-
-Backend built entirely in Python using Flask
-
-Frontend (HTML, CSS, JS) embedded directly inside the Python file
-
-Live MJPEG webcam streaming via Flask response generator
-
-Lightweight, dependency-minimal, and easy to deploy
-
-5️⃣ Ethical & Design Philosophy
-
-❌ No biometric storage
-
-❌ No face recognition or identity verification
-
-❌ No demographic inference
-
-✅ Designed as an art–technology fusion project
-
-✅ Encourages introspection, not classification
-
-🧠 Technical Stack
-
-Python
-
-OpenCV (cv2)
-
-MediaPipe Face Mesh
-
-Flask
-
-HTML / CSS / JavaScript (embedded)
-
-🎯 Intended Use Cases
-
-AI & Computer Vision demonstrations
-
-Art-tech installations
-
-Experimental UI/UX projects
-
-Educational exploration of MediaPipe Face Mesh
-
-Creative mythological storytelling with technology
-
-🚀 Future Scope
-
-Deterministic face-geometry mapping
-
-Persistent user–archetype linking
-
-Character image rendering
-
-Confidence scoring based on landmark ratios
-
-Multi-language mythology expansion
-
-⚠️ Disclaimer
-
-This project is symbolic and artistic. Any resemblance between users and mythological characters is interpretive and not based on biometric identity recognition.
+---
+*Created with a blend of modern code and ancient wisdom.*
